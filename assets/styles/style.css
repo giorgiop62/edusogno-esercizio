@@ -2,3 +2,17 @@ body{
     display: flex;
     justify-content: center;
 }
+
+h2{
+    color: blue;
+}
+.accedi{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+input{
+    margin-bottom: 20px;
+}
