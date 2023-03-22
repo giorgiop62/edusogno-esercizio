@@ -1,12 +1,7 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !==true){
-        header("location:accedi.html");
-        exit;
-
-    }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,12 +19,17 @@
         <div class="logo">
             EDUSOGNO
         </div>
-        <a href="logout.php">Discontetti</a>
     </header>
 
     <?php
-    echo "ciao" .$_SESSION["nome"];
+        echo "i tuoi eventi sono:"
     ?>
+
+    <div class="eventi">
+    
+    </div>
+
+   
 
 
 

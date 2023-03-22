@@ -6,4 +6,4 @@ $_SESSION = array();
 
 session_destroy();
 
-header("location: ../accedi.php");
+header("location: accedi.html");
