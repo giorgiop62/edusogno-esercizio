@@ -1,18 +1,23 @@
 <?php
-function OpenCon()
- {
- $dbhost = "localhost";
- $user = "root";
- $pass = "";
- $db = "edusogno";
- $conn = new mysqli($dbhost, $user, $pass,$db) or die("Connect failed: %s\n". $conn -> error);
- 
- return $conn;
- }
- 
-function CloseCon($conn)
- {
- $conn -> close();
- }
-   
+
+$user = 'root';
+$password = 'root';
+$db = 'edusogno';
+$host = 'localhost';
+$port = 3306;
+
+$connessione = mysqli_init();
+$success = mysqli_real_connect(
+    $connessione,
+    $host,
+    $user,
+    $password,
+    $db,
+    $port
+ );
+
+if($success == false){
+    die("Errore durante la connessione: " . mysqli_error_connect());
+}
+
 ?>

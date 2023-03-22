@@ -23,17 +23,17 @@
 
        
         <div class="accedi">
-            <form action="./php/register.php" method="POST"></form>
-            <label for="name">Inserisci il  nome</label>
-            <input type="text" name="name" id="name" placeholder="Mario" required>
-            <label for="usurname">Inserisci il cognome</label>
-            <input type="text" name="usurname" id="usurname" placeholder="rossi" required>
-            <label for="email">Inserisci l'e-mail</label>
-            <input type="text" name="email" id="email" placeholder="name@example.com" required>
-            <label for="password">Inserisci la password</label>
-            <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
-
-            <input class="button" type="submit" value="Registrati">
+            <form action="./php/register.php" method="POST">    
+                <label for="nome">Inserisci il  nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Mario" required>
+                <label for="cognome">Inserisci il cognome</label>
+                <input type="text" name="cognome" id="cognome" placeholder="rossi" required>
+                <label for="email">Inserisci l'e-mail</label>
+                <input type="text" name="email" id="email" placeholder="name@example.com" required>
+                <label for="password">Inserisci la password</label>
+                <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
+                <input class="button" type="submit" value="Registrati">
+            </form>
             <p>Hai già un account? <a href="accedi.html">Accedi</a></p>
         </div>
 </main>
